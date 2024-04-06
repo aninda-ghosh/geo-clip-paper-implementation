@@ -6,9 +6,11 @@ _C = CN()
 _C.DATA = CN()
 _C.DATA.GPS_GALLERY = "D:/Kerner-Lab/geo-clip-paper-implementation/coordinates_100K.csv"
 _C.DATA.DATASET_FILE = "D:/Kerner-Lab/user03/sampled_export/photo_metadata_resampled.csv"
+_C.DATA.EVAL_DATASET_FILE = "D:/Kerner-Lab/geo-clip-paper-implementation/dataset/yfcc4k/yfcc4k.csv"
 
 # Model
 _C.MODEL = CN()
+_C.MODEL.CHECKPOINT_PATH = "D:/Kerner-Lab/geo-clip-paper-implementation/lightning_logs/version_0/checkpoints/epoch=8-step=5400.ckpt"
 _C.MODEL.GPS_QUEUE_SIZE = 1000
 _C.MODEL.SEED_VALUE = 43
 

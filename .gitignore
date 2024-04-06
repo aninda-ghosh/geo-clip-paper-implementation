@@ -1,6 +1,6 @@
 *.zip
-*.jpg
-*.jpeg
-*.png
 *.pyc
+*.log
+*.csv
+*.txt
 lightning_logs/*

@@ -15,3 +15,67 @@ Worldwide Geo-localization aims to pinpoint the precise location of images taken
 - Organized the code in a structure with easy training and testing scripts.
 - Added support for pytorch lightning and tensorboard logging.
 - Added a config file to make experiments more scalable.
+
+### v1.0.1
+
+- Added evaluation script
+- Performed evaluation on YFCC4K dataset.
+    `Accuracy at 2500 km: 67.77`
+    `Accuracy at 750 km: 44.44`
+    `Accuracy at 200 km: 21.94`
+    `Accuracy at 25 km: 9.08`
+    `Accuracy at 1 km: 1.21`
+- Added script to predict location for a given image.
+
+## Test Results
+
+### Test 1 (ASU Library)
+
+#### Fed Image
+
+![](test_image\asu_library.jpg)
+
+#### Results
+
+- Image 1 GPS (top 3):
+    ` tensor([[  33.4187, -111.9389], [  33.4187, -111.9369], [  33.4192, -111.9505]]) `
+- Image 1 Probability: 
+    `tensor([0.0082, 0.0080, 0.0079])`
+
+#### Location from Google Maps
+
+![](test_image\asu_library_location.png)
+
+### Test 2 (Eiffel Tower)
+
+#### Fed Image
+
+![](test_image\eiffel_tower.jpeg)
+
+#### Results
+
+- Image GPS (top 3):
+    `tensor([[48.8616,  2.2941], [48.8629,  2.2959], [48.8619,  2.2903]])`
+- Image Probability: 
+    `tensor([0.0013, 0.0013, 0.0013])`
+
+#### Location from Google Maps
+
+![](test_image\eiffel_tower_location.png)
+
+### Test 3 (Taj Mahal)
+
+#### Fed Image
+
+![](test_image\taj_mahal.jpg)
+
+#### Results
+
+- Image GPS (top 3):
+    `tensor([[27.1676, 78.0369], [27.1692, 78.0422], [27.1711, 78.0407]])`
+- Image Probability: 
+    `tensor([0.0143, 0.0136, 0.0135])`
+
+#### Location from Google Maps
+
+![](test_image\taj_mahal_location.png)
