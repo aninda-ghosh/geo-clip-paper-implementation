@@ -35,6 +35,10 @@ Worldwide Geo-localization aims to pinpoint the precise location of images taken
 
 - Added Google Maps link for the test locations.
 
+### v1.0.4
+
+- Added clickable images for google maps
+
 ## Test Results
 
 ### Test 1 (ASU Library)
@@ -52,12 +56,9 @@ Worldwide Geo-localization aims to pinpoint the precise location of images taken
 
 #### Location from Google Maps
 
-<!-- ![Image 2](./test_image/asu_library_location.png) -->
-
 https://maps.app.goo.gl/T6XZhZX3VhwMFTxQA
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3330.1742963924194!2d-111.94147492239159!3d33.41869997340215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDI1JzA3LjMiTiAxMTHCsDU2JzIwLjAiVw!5e0!3m2!1sen!2sus!4v1712521040223!5m2!1sen!2sus" width="1000" height=550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+[![Image 2](./test_image/asu_library_location.png)](https://maps.app.goo.gl/T6XZhZX3VhwMFTxQA)
 
 ### Test 2 (Eiffel Tower)
 
@@ -76,9 +77,7 @@ https://maps.app.goo.gl/T6XZhZX3VhwMFTxQA
 
 https://maps.app.goo.gl/AwkWGAbRjemMiHCr8
 
-<!-- ![Image 4](./test_image/eiffel_tower_paris_location.png) -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2624.822241255638!2d2.29152507797694!3d48.86159997133259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDjCsDUxJzQxLjgiTiAywrAxNyczOC44IkU!5e0!3m2!1sen!2sus!4v1712521138824!5m2!1sen!2sus" width="1000" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+[![Image 4](./test_image/eiffel_tower_paris_location.png)](https://maps.app.goo.gl/AwkWGAbRjemMiHCr8)
 
 ### Test 3 (Taj Mahal)
 
@@ -97,8 +96,7 @@ https://maps.app.goo.gl/AwkWGAbRjemMiHCr8
 
 https://maps.app.goo.gl/SpTanRSWNxrXQNKQ6
 
-<!-- ![Image 6](./test_image/taj_mahal_location.png) -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3549.6404732480546!2d78.03432507749352!3d27.167599976496216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDEwJzAzLjQiTiA3OMKwMDInMTIuOCJF!5e0!3m2!1sen!2sus!4v1712521321930!5m2!1sen!2sus" width="1000" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+[![Image 6](./test_image/taj_mahal_location.png)](https://maps.app.goo.gl/SpTanRSWNxrXQNKQ6)
 
 ### Test 4 (Washington University)
 
@@ -115,8 +113,6 @@ https://maps.app.goo.gl/SpTanRSWNxrXQNKQ6
 
 #### Location from Google Maps
 
-<!-- ![Image 8](./test_image/washinton_university_location.png) -->
-
 https://maps.app.goo.gl/VakQywnbXP4CndN1A
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3232.1966153757867!2d-78.89137492234049!3d35.8931999725197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDUzJzM1LjUiTiA3OMKwNTMnMTkuNyJX!5e0!3m2!1sen!2sus!4v1712521447215!5m2!1sen!2sus" width="1000" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+[![Image 8](./test_image/washinton_university_location.png)](https://maps.app.goo.gl/VakQywnbXP4CndN1A)
