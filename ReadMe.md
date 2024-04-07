@@ -33,24 +33,24 @@ Worldwide Geo-localization aims to pinpoint the precise location of images taken
 
 #### Fed Image
 
-![](test_image/asu_library.jpg)
+![Image 1](./test_image/asu_library.jpg)
 
 #### Results
 
 - Image 1 GPS (top 3):
     ` tensor([[  33.4187, -111.9389], [  33.4187, -111.9369], [  33.4192, -111.9505]]) `
-- Image 1 Probability: 
+- Image 1 Probability:
     `tensor([0.0082, 0.0080, 0.0079])`
 
 #### Location from Google Maps
 
-![](test_image/asu_library_location.png)
+![Image 2](./test_image/asu_library_location.png)
 
 ### Test 2 (Eiffel Tower)
 
 #### Fed Image
 
-![](test_image/eiffel_tower.jpeg)
+![Image 3](./test_image/eiffel_tower.jpeg)
 
 #### Results
 
@@ -61,13 +61,13 @@ Worldwide Geo-localization aims to pinpoint the precise location of images taken
 
 #### Location from Google Maps
 
-![](test_image/eiffel_tower_location.png)
+![Image 4](./test_image/eiffel_tower_location.png)
 
 ### Test 3 (Taj Mahal)
 
 #### Fed Image
 
-![](test_image/taj_mahal.jpg)
+![Image 5](./test_image/taj_mahal.jpg)
 
 #### Results
 
@@ -78,4 +78,4 @@ Worldwide Geo-localization aims to pinpoint the precise location of images taken
 
 #### Location from Google Maps
 
-![](test_image/taj_mahal_location.png)
+![Image 6](./test_image/taj_mahal_location.png)
