@@ -27,6 +27,10 @@ Worldwide Geo-localization aims to pinpoint the precise location of images taken
     `Accuracy at 1 km: 1.21`
 - Added script to predict location for a given image.
 
+### v1.0.2
+
+- Added one more random test case for Washington University.
+
 ## Test Results
 
 ### Test 1 (ASU Library)
@@ -56,7 +60,7 @@ Worldwide Geo-localization aims to pinpoint the precise location of images taken
 
 - Image GPS (top 3):
     `tensor([[48.8616,  2.2941], [48.8629,  2.2959], [48.8619,  2.2903]])`
-- Image Probability: 
+- Image Probability:
     `tensor([0.0013, 0.0013, 0.0013])`
 
 #### Location from Google Maps
@@ -73,9 +77,26 @@ Worldwide Geo-localization aims to pinpoint the precise location of images taken
 
 - Image GPS (top 3):
     `tensor([[27.1676, 78.0369], [27.1692, 78.0422], [27.1711, 78.0407]])`
-- Image Probability: 
+- Image Probability:
     `tensor([0.0143, 0.0136, 0.0135])`
 
 #### Location from Google Maps
 
-![Image 6](./test_image/taj_mahal_location.png)
+![Image 6](./test_image/washinton_university.jpg)
+
+### Test 4 (Taj Mahal)
+
+#### Fed Image
+
+![Image 7](./test_image/taj_mahal.jpg)
+
+#### Results
+
+- Image GPS (top 3):
+    `tensor([[ 35.8932, -78.8888], [ 35.8933, -78.8888], [ 35.9482, -79.0820]])`
+- Image Probability:
+    `tensor([0.0007, 0.0007, 0.0006])`
+
+#### Location from Google Maps
+
+![Image 8](./test_image/washinton_university_location.png)
