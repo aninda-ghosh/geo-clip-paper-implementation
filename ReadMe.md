@@ -82,13 +82,13 @@ Worldwide Geo-localization aims to pinpoint the precise location of images taken
 
 #### Location from Google Maps
 
-![Image 6](./test_image/washinton_university.jpg)
+![Image 6](./test_image/taj_mahal_location.png)
 
 ### Test 4 (Taj Mahal)
 
 #### Fed Image
 
-![Image 7](./test_image/taj_mahal.jpg)
+![Image 7](./test_image/washinton_university.jpg)
 
 #### Results
 
