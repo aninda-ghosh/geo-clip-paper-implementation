@@ -84,7 +84,7 @@ Worldwide Geo-localization aims to pinpoint the precise location of images taken
 
 ![Image 6](./test_image/taj_mahal_location.png)
 
-### Test 4 (Taj Mahal)
+### Test 4 (Washington University)
 
 #### Fed Image
 
