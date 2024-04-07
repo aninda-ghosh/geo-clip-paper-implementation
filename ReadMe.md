@@ -100,7 +100,7 @@ https://maps.app.goo.gl/SpTanRSWNxrXQNKQ6
 <!-- ![Image 6](./test_image/taj_mahal_location.png) -->
 <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3549.6404732480546!2d78.03432507749352!3d27.167599976496216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDEwJzAzLjQiTiA3OMKwMDInMTIuOCJF!5e0!3m2!1sen!2sus!4v1712521321930!5m2!1sen!2sus" width="1000" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-### Test 4 (Taj Mahal)
+### Test 4 (Washington University)
 
 #### Fed Image
 
