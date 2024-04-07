@@ -50,7 +50,7 @@ Worldwide Geo-localization aims to pinpoint the precise location of images taken
 
 #### Fed Image
 
-![](test_image/eiffel_tower.jpeg)
+![](test_image/Eiffel_tower.jpeg)
 
 #### Results
 
@@ -61,7 +61,7 @@ Worldwide Geo-localization aims to pinpoint the precise location of images taken
 
 #### Location from Google Maps
 
-![](test_image/eiffel_tower_location.png)
+![](test_image/Eiffel_tower_location.png)
 
 ### Test 3 (Taj Mahal)
 
