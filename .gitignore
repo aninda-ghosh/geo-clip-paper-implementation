@@ -4,3 +4,4 @@
 *.csv
 *.txt
 lightning_logs/*
+__pycache__/*

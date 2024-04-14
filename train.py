@@ -1,6 +1,6 @@
 from config import cfg
 from geo_clip import GeoCLIP, img_train_transform
-from dataset.dataset import GeoCLIPDataModule
+from dataset.dataset import GeoCLIPDataset
 from torch.utils.data import DataLoader, random_split
 import pytorch_lightning as pl
 import torch
@@ -17,7 +17,10 @@ if __name__ == "__main__":
     torch.set_float32_matmul_precision('medium')
 
     # Initialize the dataset and dataloaders
-    dataset = GeoCLIPDataModule(dataset_file=cfg.DATA.DATASET_FILE, transform=img_train_transform())
+    dataset = GeoCLIPDataset(dataset_path=cfg.DATA.TRAIN_DATASET_PATH, transform=img_train_transform())
+
+    #truncate the dataset to 114,352 samples
+    dataset = torch.utils.data.Subset(dataset, range(114352))
     
     train_size = int(cfg.TRAINING.TRAIN_SPLIT * len(dataset))
     test_size = len(dataset) - train_size

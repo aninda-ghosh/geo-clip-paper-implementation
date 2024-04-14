@@ -8,21 +8,22 @@ from PIL import ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 
-class GeoCLIPDataModule(Dataset):
+class GeoCLIPDataset(Dataset):
     
-    def __init__(self, dataset_file, transform=None):
-        self.dataset_file = dataset_file
+    def __init__(self, dataset_path, transform=None):
+        self.dataset_path = dataset_path
+        self.dataset_metadata = dataset_path + "metadata.csv"
         self.transform = transform
         self.images, self.coordinates = self.load_dataset()
 
     def load_dataset(self):
-        data_df = pd.read_csv(self.dataset_file)
+        data_df = pd.read_csv(self.dataset_metadata)
 
         images = []
         coordinates = []
 
         for _, row in tqdm(data_df.iterrows(), desc="Loading image paths and coordinates"):
-            images.append(row['image_file_path'])
+            images.append(self.dataset_path + "images/" +row['id'])
             coordinates.append((row['latitude'], row['longitude']))
 
         return images, coordinates
