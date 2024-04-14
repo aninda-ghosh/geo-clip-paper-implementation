@@ -19,8 +19,8 @@ if __name__ == "__main__":
     # Initialize the dataset and dataloaders
     dataset = GeoCLIPDataset(dataset_path=cfg.DATA.TRAIN_DATASET_PATH, transform=img_train_transform())
 
-    #truncate the dataset to 114,352 samples
-    dataset = torch.utils.data.Subset(dataset, range(114352))
+    #truncate the dataset to 114,480 samples to avoid bath size issues
+    dataset = torch.utils.data.Subset(dataset, range(114480))
     
     train_size = int(cfg.TRAINING.TRAIN_SPLIT * len(dataset))
     test_size = len(dataset) - train_size
@@ -38,9 +38,7 @@ if __name__ == "__main__":
         max_epochs=cfg.TRAINING.MAX_EPOCHS,
         deterministic=True,
         num_sanity_val_steps=0,
-        # detect_anomaly=True,
         callbacks=[StochasticWeightAveraging(swa_lrs=cfg.TRAINING.SWA_LRS)]
-        # gradient_clip_val=1.5
     )
 
     trainer.fit(model, train_dataloaders=train_dataloader, val_dataloaders=val_dataloader)
