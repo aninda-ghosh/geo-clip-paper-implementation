@@ -282,6 +282,10 @@ https://maps.app.goo.gl/VakQywnbXP4CndN1A
   - YFCC26k [(link)](#yfcc26k-dataset)
   - YFCC4k [(link)](#yfcc4k-dataset)
 
+### v1.0.7
+
+- Changed validation batch size to match with the GPS Queue size.
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Acknowledgement

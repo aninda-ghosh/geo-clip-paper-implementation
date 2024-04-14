@@ -1,22 +1,15 @@
 import pytorch_lightning as pl
 import torch
 import torch.nn as nn
-from torch.utils.data import DataLoader, random_split
 from torchvision import transforms
-import torch.optim.lr_scheduler as lr_scheduler
-from pytorch_lightning.callbacks import StochasticWeightAveraging
-import os
 import numpy as np
 import pandas as pd
 import torch.nn.functional as F
-from pytorch_lightning.utilities import grad_norm
-
 
 from model.image_encoder import ImageEncoder
 from model.location_encoder import LocationEncoder
 from solver.losses import Contrastive_Loss
 
-from config import cfg
 
 def img_train_transform():
     train_transform_list = transforms.Compose([
@@ -58,11 +51,6 @@ class GeoCLIP(pl.LightningModule):
 
     @torch.no_grad()
     def dequeue_and_enqueue(self, gps):
-        """ Update GPS queue
-
-        Args:
-            gps (torch.Tensor): GPS tensor of shape (batch_size, 2)
-        """
         gps_batch_size = gps.shape[0]
         gps_ptr = int(self.gps_queue_ptr)
         
@@ -90,10 +78,6 @@ class GeoCLIP(pl.LightningModule):
 
     def configure_optimizers(self):
         return self.optimizer
-        
-    # def on_before_optimizer_step(self, optimizer):
-    #     norms = grad_norm(self, norm_type=2)
-    #     self.log_dict(norms)
 
     def training_step(self, batch, batch_idx):
         image, gps = batch
