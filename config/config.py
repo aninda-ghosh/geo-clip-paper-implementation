@@ -10,7 +10,7 @@ _C.DATA.EVAL_DATASET_PATH = "D:/kerner-lab/datasets/yfcc4k/"
 
 # Model
 _C.MODEL = CN()
-_C.MODEL.CHECKPOINT_PATH = "D:/Kerner-Lab/geo-clip-paper-implementation/lightning_logs/version_0/checkpoints/epoch=8-step=5400.ckpt"
+_C.MODEL.CHECKPOINT_PATH = "D:/kerner-lab/geo-clip-paper-implementation/lightning_logs/version_2/checkpoints/epoch=5-step=17172.ckpt"
 _C.MODEL.GPS_QUEUE_SIZE = 992
 _C.MODEL.SEED_VALUE = 43
 

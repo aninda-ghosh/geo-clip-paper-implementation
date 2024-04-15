@@ -286,6 +286,10 @@ https://maps.app.goo.gl/VakQywnbXP4CndN1A
 
 - Changed validation batch size to match with the GPS Queue size.
 
+### v1.0.8
+
+- Evaluated on YFCC26k Dataset along with YFCC4k Dataset
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Acknowledgement
